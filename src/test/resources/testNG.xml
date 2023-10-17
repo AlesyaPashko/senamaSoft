@@ -1,0 +1,64 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="MainTest">
+
+    <test name="MainTest" parallel="false">
+        <classes>
+            <class name="tests.englishTests.HeaderTest">
+                <methods>
+                    <include name="checkHomeHeaderLinks"/>
+                    <include name="checkServiceHeaderLinks"/>
+                    <include name="checkPortfolioHeaderLinks"/>
+                    <include name="checkContactsHeaderLinks"/>
+                    <include name="checkCareerHeaderLinks"/>
+                    <include name="checkTestimonialsHeaderLinks"/>
+                    <include name="checkHomeLanguageChange"/>
+                    <include name="checkServiceLanguageChange"/>
+                    <include name="checkPortfolioLanguageChange"/>
+                    <include name="checkContactsLanguageChange"/>
+                    <include name="checkCareerLanguageChange"/>
+                    <include name="checkTestimonialsLanguageChange"/>
+                </methods>
+            </class>
+            <class name="tests.englishTests.HomeTest">
+                <methods>
+                    <include name="checkReadMoreButton"/>
+                    <include name="openProjectByIcon"/>
+                    <include name="checkMoreProjectsButton"/>
+                </methods>
+            </class>
+            <class name="tests.englishTests.ServicesTest">
+                <methods>
+                    <include name="checkMobileApplicationButton"/>
+                    <include name="checkWebApplicationButton"/>
+                </methods>
+            </class>
+            <class name="tests.englishTests.PortfolioTest">
+                <methods>
+                    <include name="checkWebApplicationButton"/>
+                    <include name="checkMobileApplicationButton"/>
+                    <include name="checkUXApplicationButton"/>
+                    <include name="checkWebProjectsLinks"/>
+                    <include name="checkPopProjectsLinks"/>
+                    <include name="checkLifeTwigProjectsLinks"/>
+                    <include name="checkUXProjectsLinks"/>
+                </methods>
+            </class>
+            <class name="tests.englishTests.CareerTest">
+                <methods>
+                    <include name="checkOpenFullInformation"/>
+                    <include name="checkCloseFullInformation"/>
+                </methods>
+            </class>
+            <class name="tests.englishTests.FooterTest">
+                <methods>
+                    <include name="checkHomeFooterButtons"/>
+                    <include name="checkServiceFooterButtons"/>
+                    <include name="checkPortfolioFooterButtons"/>
+                    <include name="checkContactsFooterButtons"/>
+                    <include name="checkCareerFooterButtons"/>
+                    <include name="checkTestimonialsFooterButtons"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

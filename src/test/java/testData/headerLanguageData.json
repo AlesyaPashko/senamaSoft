@@ -1,0 +1,52 @@
+[
+  {
+    "language": "english",
+    "welcomeContent": "We grow your business using our technological expertise. Full-cycle software development. Outsourcing and outstaffing",
+    "servicesContent": "Our company provides software development services in the fields of mobile and web application development, server and serverless solutions. We provide support for already exsisting projects and help implement new solutions.",
+    "portfolioContent": "Our projects",
+    "contactsContent": "Contacts",
+    "careerContent": "Career",
+    "testimonialsContent": "What our customers say",
+    "activeClassName": "styles_lang_btn___4ThX styles_active_lang__wjmeN"
+  },
+  {
+    "language": "russian",
+    "welcomeContent": "Развиваем Ваш бизнес, используя наш технологический опыт. Полный цикл разработки и поддержки ПО. Аутсорс и аутстафф",
+    "servicesContent": "Наша компания предоставляет услуги по разработке мобильных и веб приложений, серверных и serverless решений. Осуществляем поддержку существующих проектов, помогаем разработать и внедрить новые решения.",
+    "portfolioContent": "Наши выполненные проекты",
+    "contactsContent": "Контакты",
+    "careerContent": "Карьера",
+    "testimonialsContent": "Что говорят наши клиенты",
+    "activeClassName": "styles_lang_btn___4ThX styles_active_lang__wjmeN"
+  },
+  {
+    "language": "arab",
+    "welcomeContent": "نحن نطور عملك باستخدام خبرتنا التكنولوجية. دورة كاملة من تطوير البرمجيات والدعم. الاستعانة بمصادر خارجية والموظفين الخارجيين",
+    "servicesContent": "تقدم شركتنا خدمات لتطوير تطبيقات الهاتف المحمول والويب والحلول الخادمة والحلول بدون خادم. نحن نقدم الدعم للمشاريع القائمة ونساعد في تطوير وتنفيذ حلول جديدة.",
+    "portfolioContent": "مشاريعنا المكتملة",
+    "contactsContent": "جهات الاتصال",
+    "careerContent": "حياة مهنية",
+    "testimonialsContent": "ما يقوله عملاؤنا",
+    "activeClassName": "styles_lang_btn___4ThX styles_active_lang__wjmeN"
+  },
+  {
+    "language": "poland",
+    "welcomeContent": "Rozwijamy wasz biznes, używając nasze doświadczenie technologiczne. Pełny cykl rozwoju i wsparcia technicznego dla oprogramowania. Outsourcing i outstaffing.",
+    "servicesContent": "Nasza firma świadczy usługi w zakresie tworzenia aplikacji mobilnych i webowych, rozwiązań serwerowych i bezserwerowych. Wspieramy istniejące projekty, pomagamy w opracowywaniu i wdrażaniu nowych rozwiązań.",
+    "portfolioContent": "Nasze projekty",
+    "contactsContent": "Kontakt",
+    "careerContent": "Kariera",
+    "testimonialsContent": "Co mówią nasi klienci",
+    "activeClassName": "styles_lang_btn___4ThX styles_active_lang__wjmeN"
+  },
+  {
+    "language": "dutch",
+    "welcomeContent": "Wir bringen Ihr Unternehmen mit unserem technologischen Know-how voran. Software-Entwicklung über den gesamten Zyklus. Outsourcing und Auslagerung von Mitarbeitern",
+    "servicesContent": "Unser Unternehmen bietet Software-Entwicklungsdienstleistungen in den Bereichen Mobile- und Web-Anwendungsentwicklung, Server- und Serverless-Lösungen. Wir bieten Unterstützung für bereits bestehende Projekte und helfen bei der Implementierung neuer Lösungen.",
+    "portfolioContent": "Unsere Projekte",
+    "contactsContent": "Kontakte",
+    "careerContent": "Karriere",
+    "testimonialsContent": "Was unsere Kunden sagen",
+    "activeClassName": "styles_lang_btn___4ThX styles_active_lang__wjmeN"
+  }
+]

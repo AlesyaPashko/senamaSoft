@@ -1,0 +1,30 @@
+[
+  {
+    "tabName": "logo",
+    "link": "https://www.senamasoft.com/"
+  },
+  {
+    "tabName": "home",
+    "link": "https://www.senamasoft.com/"
+  },
+  {
+    "tabName": "services",
+    "link": "https://www.senamasoft.com/services"
+  },
+  {
+    "tabName": "portfolio",
+    "link": "https://www.senamasoft.com/portfolio"
+  },
+  {
+    "tabName": "contacts",
+    "link": "https://www.senamasoft.com/contacts"
+  },
+  {
+    "tabName": "career",
+    "link": "https://www.senamasoft.com/offers"
+  },
+  {
+    "tabName": "testimonials",
+    "link": "https://www.senamasoft.com/testimonials"
+  }
+]

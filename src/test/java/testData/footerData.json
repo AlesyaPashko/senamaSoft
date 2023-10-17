@@ -1,0 +1,18 @@
+[
+  {
+    "buttonName": "address",
+    "link": "https://www.google.com/maps/place/Wirtualne+Biuro+ul.+Mickiewicza+Ale-biuro.pl/@52.2725396,20.9829194,17z/data=!3m1!4b1!4m5!3m4!1s0x471ecbeee78a7f9f:0x38b21f0571ad6498!8m2!3d52.2725396!4d20.9829194?hl=en"
+  },
+  {
+    "buttonName": "instagram",
+    "link": "https://www.instagram.com/senamasoft/"
+  },
+  {
+    "buttonName": "facebook",
+    "link": "https://www.facebook.com/senamasoftFB/"
+  },
+  {
+    "buttonName": "linkedin",
+    "link": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fsenamasoft%2Fabout%2F%3FviewAsMember%3Dtrue"
+  }
+]
