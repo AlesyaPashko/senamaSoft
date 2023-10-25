@@ -1,0 +1,58 @@
+[
+  {
+    "file": "/Users/pashk/Documents/doc_negativ_test/Important Document.doc",
+    "textEn": "File larger than 5MB",
+    "textRu": "Файл больше 5MB",
+    "textAr": "ملف أكبر من 5 ميجا بايت",
+    "textPl": "Plik większy niż 5 MB",
+    "textDe": "Datei größer als 5MB"
+  },
+  {
+    "file": "/Users/pashk/Documents/doc_negativ_test/Important Document.docx",
+    "textEn": "File larger than 5MB",
+    "textRu": "Файл больше 5MB",
+    "textAr": "ملف أكبر من 5 ميجا بايت",
+    "textPl": "Plik większy niż 5 MB",
+    "textDe": "Datei größer als 5MB"
+  },
+  {
+    "file": "/Users/pashk/Documents/doc_negativ_test/Important Document.pdf",
+    "textEn": "File larger than 5MB",
+    "textRu": "Файл больше 5MB",
+    "textAr": "ملف أكبر من 5 ميجا بايت",
+    "textPl": "Plik większy niż 5 MB",
+    "textDe": "Datei größer als 5MB"
+  },
+  {
+    "file": "/Users/pashk/Documents/doc_negativ_test/mysql-5.5.23-winx64.msi",
+    "textEn": "Invalid format",
+    "textRu": "Неверный формат",
+    "textAr": "صيغة خاطئة",
+    "textPl": "Nieprawidłowy format",
+    "textDe": "Ungültiges Format"
+  },
+  {
+    "file": "/Users/pashk/Documents/doc_negativ_test/output-onlinefiletools.txt",
+    "textEn": "File larger than 5MB",
+    "textRu": "Файл больше 5MB",
+    "textAr": "ملف أكبر من 5 ميجا بايت",
+    "textPl": "Plik większy niż 5 MB",
+    "textDe": "Datei größer als 5MB"
+  },
+  {
+    "file": "/Users/pashk/Documents/doc_negativ_test/show_third_party_software_licenses.bat",
+    "textEn": "Invalid format",
+    "textRu": "Неверный формат",
+    "textAr": "صيغة خاطئة",
+    "textPl": "Nieprawidłowy format",
+    "textDe": "Ungültiges Format"
+  },
+  {
+    "file": "/Users/pashk/Documents/doc_negativ_test/squirrel.exe",
+    "textEn": "Invalid format",
+    "textRu": "Неверный формат",
+    "textAr": "صيغة خاطئة",
+    "textPl": "Nieprawidłowy format",
+    "textDe": "Ungültiges Format"
+  }
+]

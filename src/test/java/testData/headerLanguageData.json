@@ -6,8 +6,7 @@
     "portfolioContent": "Our projects",
     "contactsContent": "Contacts",
     "careerContent": "Career",
-    "testimonialsContent": "What our customers say",
-    "activeClassName": "styles_lang_btn___4ThX styles_active_lang__wjmeN"
+    "testimonialsContent": "What our customers say"
   },
   {
     "language": "russian",
@@ -16,8 +15,7 @@
     "portfolioContent": "Наши выполненные проекты",
     "contactsContent": "Контакты",
     "careerContent": "Карьера",
-    "testimonialsContent": "Что говорят наши клиенты",
-    "activeClassName": "styles_lang_btn___4ThX styles_active_lang__wjmeN"
+    "testimonialsContent": "Что говорят наши клиенты"
   },
   {
     "language": "arab",
@@ -26,8 +24,7 @@
     "portfolioContent": "مشاريعنا المكتملة",
     "contactsContent": "جهات الاتصال",
     "careerContent": "حياة مهنية",
-    "testimonialsContent": "ما يقوله عملاؤنا",
-    "activeClassName": "styles_lang_btn___4ThX styles_active_lang__wjmeN"
+    "testimonialsContent": "ما يقوله عملاؤنا"
   },
   {
     "language": "poland",
@@ -36,8 +33,7 @@
     "portfolioContent": "Nasze projekty",
     "contactsContent": "Kontakt",
     "careerContent": "Kariera",
-    "testimonialsContent": "Co mówią nasi klienci",
-    "activeClassName": "styles_lang_btn___4ThX styles_active_lang__wjmeN"
+    "testimonialsContent": "Co mówią nasi klienci"
   },
   {
     "language": "dutch",
@@ -46,7 +42,6 @@
     "portfolioContent": "Unsere Projekte",
     "contactsContent": "Kontakte",
     "careerContent": "Karriere",
-    "testimonialsContent": "Was unsere Kunden sagen",
-    "activeClassName": "styles_lang_btn___4ThX styles_active_lang__wjmeN"
+    "testimonialsContent": "Was unsere Kunden sagen"
   }
 ]

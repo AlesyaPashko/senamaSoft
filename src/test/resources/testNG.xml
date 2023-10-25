@@ -3,6 +3,25 @@
 
     <test name="MainTest" parallel="false">
         <classes>
+            <class name="tests.api.GetInTouchAPITest">
+                <methods>
+                    <include name="checkGetInTouchForm"/>
+                    <include name="checkGetInTouchFormNoFile"/>
+                    <include name="checkGetInTouchFormNoEmail"/>
+                    <include name="checkGetInTouchFormNoDescription"/>
+                    <include name="checkGetInTouchFormEmpty"/>
+                    <include name="checkGetInTouchFormErrorForm"/>
+                </methods>
+            </class>
+            <class name="tests.api.ContentTest">
+                <methods>
+                    <include name="checkEnContentTest"/>
+                    <include name="checkRuContentTest"/>
+                    <include name="checkArContentTest"/>
+                    <include name="checkPlContentTest"/>
+                    <include name="checkDeContentTest"/>
+                </methods>
+            </class>
             <class name="tests.englishTests.HeaderTest">
                 <methods>
                     <include name="checkHomeHeaderLinks"/>
@@ -17,6 +36,18 @@
                     <include name="checkContactsLanguageChange"/>
                     <include name="checkCareerLanguageChange"/>
                     <include name="checkTestimonialsLanguageChange"/>
+                </methods>
+            </class>
+            <class name="tests.englishTests.GetInTouchTest">
+                <methods>
+                    <include name="openGetInTouchFormTest"/>
+                    <include name="closeGetInTouchFormByButtonTest"/>
+                    <include name="closeGetInTouchFormWithoutButtonTest"/>
+                    <include name="emptyFormTest"/>
+                    <include name="emptyMassageTest"/>
+                    <include name="emptyMailTest"/>
+                    <include name="addRightFile"/>
+                    <include name="addWrongFile"/>
                 </methods>
             </class>
             <class name="tests.englishTests.HomeTest">
@@ -50,6 +81,278 @@
                 </methods>
             </class>
             <class name="tests.englishTests.FooterTest">
+                <methods>
+                    <include name="checkHomeFooterButtons"/>
+                    <include name="checkServiceFooterButtons"/>
+                    <include name="checkPortfolioFooterButtons"/>
+                    <include name="checkContactsFooterButtons"/>
+                    <include name="checkCareerFooterButtons"/>
+                    <include name="checkTestimonialsFooterButtons"/>
+                </methods>
+            </class>
+            <class name="tests.russianTests.HeaderTest">
+                <methods>
+                    <include name="checkHomeHeaderLinks"/>
+                    <include name="checkServiceHeaderLinks"/>
+                    <include name="checkPortfolioHeaderLinks"/>
+                    <include name="checkContactsHeaderLinks"/>
+                    <include name="checkCareerHeaderLinks"/>
+                    <include name="checkTestimonialsHeaderLinks"/>
+                    <include name="checkHomeLanguageChange"/>
+                    <include name="checkServiceLanguageChange"/>
+                    <include name="checkPortfolioLanguageChange"/>
+                    <include name="checkContactsLanguageChange"/>
+                    <include name="checkCareerLanguageChange"/>
+                    <include name="checkTestimonialsLanguageChange"/>
+                </methods>
+            </class>
+            <class name="tests.russianTests.GetInTouchTest">
+                <methods>
+                    <include name="openGetInTouchFormTest"/>
+                    <include name="closeGetInTouchFormByButtonTest"/>
+                    <include name="closeGetInTouchFormWithoutButtonTest"/>
+                    <include name="emptyFormTest"/>
+                    <include name="emptyMassageTest"/>
+                    <include name="emptyMailTest"/>
+                    <include name="addRightFile"/>
+                    <include name="addWrongFile"/>
+                </methods>
+            </class>
+            <class name="tests.russianTests.HomeTest">
+                <methods>
+                    <include name="checkReadMoreButton"/>
+                    <include name="openProjectByIcon"/>
+                    <include name="checkMoreProjectsButton"/>
+                </methods>
+            </class>
+            <class name="tests.russianTests.ServicesTest">
+                <methods>
+                    <include name="checkMobileApplicationButton"/>
+                    <include name="checkWebApplicationButton"/>
+                </methods>
+            </class>
+            <class name="tests.russianTests.PortfolioTest">
+                <methods>
+                    <include name="checkWebApplicationButton"/>
+                    <include name="checkMobileApplicationButton"/>
+                    <include name="checkUXApplicationButton"/>
+                    <include name="checkWebProjectsLinks"/>
+                    <include name="checkPopProjectsLinks"/>
+                    <include name="checkLifeTwigProjectsLinks"/>
+                    <include name="checkUXProjectsLinks"/>
+                </methods>
+            </class>
+            <class name="tests.russianTests.CareerTest">
+                <methods>
+                    <include name="checkOpenFullInformation"/>
+                    <include name="checkCloseFullInformation"/>
+                </methods>
+            </class>
+            <class name="tests.russianTests.FooterTest">
+                <methods>
+                    <include name="checkHomeFooterButtons"/>
+                    <include name="checkServiceFooterButtons"/>
+                    <include name="checkPortfolioFooterButtons"/>
+                    <include name="checkContactsFooterButtons"/>
+                    <include name="checkCareerFooterButtons"/>
+                    <include name="checkTestimonialsFooterButtons"/>
+                </methods>
+            </class>
+            <class name="tests.arabTests.HeaderTest">
+                <methods>
+                    <include name="checkHomeHeaderLinks"/>
+                    <include name="checkServiceHeaderLinks"/>
+                    <include name="checkPortfolioHeaderLinks"/>
+                    <include name="checkContactsHeaderLinks"/>
+                    <include name="checkCareerHeaderLinks"/>
+                    <include name="checkTestimonialsHeaderLinks"/>
+                    <include name="checkHomeLanguageChange"/>
+                    <include name="checkServiceLanguageChange"/>
+                    <include name="checkPortfolioLanguageChange"/>
+                    <include name="checkContactsLanguageChange"/>
+                    <include name="checkCareerLanguageChange"/>
+                    <include name="checkTestimonialsLanguageChange"/>
+                </methods>
+            </class>
+            <class name="tests.arabTests.GetInTouchTest">
+                <methods>
+                    <include name="openGetInTouchFormTest"/>
+                    <include name="closeGetInTouchFormByButtonTest"/>
+                    <include name="closeGetInTouchFormWithoutButtonTest"/>
+                    <include name="emptyFormTest"/>
+                    <include name="emptyMassageTest"/>
+                    <include name="emptyMailTest"/>
+                    <include name="addRightFile"/>
+                    <include name="addWrongFile"/>
+                </methods>
+            </class>
+            <class name="tests.arabTests.HomeTest">
+                <methods>
+                    <include name="checkReadMoreButton"/>
+                    <include name="openProjectByIcon"/>
+                    <include name="checkMoreProjectsButton"/>
+                </methods>
+            </class>
+            <class name="tests.arabTests.ServicesTest">
+                <methods>
+                    <include name="checkMobileApplicationButton"/>
+                    <include name="checkWebApplicationButton"/>
+                </methods>
+            </class>
+            <class name="tests.arabTests.PortfolioTest">
+                <methods>
+                    <include name="checkWebApplicationButton"/>
+                    <include name="checkMobileApplicationButton"/>
+                    <include name="checkUXApplicationButton"/>
+                    <include name="checkWebProjectsLinks"/>
+                    <include name="checkPopProjectsLinks"/>
+                    <include name="checkLifeTwigProjectsLinks"/>
+                    <include name="checkUXProjectsLinks"/>
+                </methods>
+            </class>
+            <class name="tests.arabTests.CareerTest">
+                <methods>
+                    <include name="checkOpenFullInformation"/>
+                    <include name="checkCloseFullInformation"/>
+                </methods>
+            </class>
+            <class name="tests.arabTests.FooterTest">
+                <methods>
+                    <include name="checkHomeFooterButtons"/>
+                    <include name="checkServiceFooterButtons"/>
+                    <include name="checkPortfolioFooterButtons"/>
+                    <include name="checkContactsFooterButtons"/>
+                    <include name="checkCareerFooterButtons"/>
+                    <include name="checkTestimonialsFooterButtons"/>
+                </methods>
+            </class>
+            <class name="tests.polandTests.HeaderTest">
+                <methods>
+                    <include name="checkHomeHeaderLinks"/>
+                    <include name="checkServiceHeaderLinks"/>
+                    <include name="checkPortfolioHeaderLinks"/>
+                    <include name="checkContactsHeaderLinks"/>
+                    <include name="checkCareerHeaderLinks"/>
+                    <include name="checkTestimonialsHeaderLinks"/>
+                    <include name="checkHomeLanguageChange"/>
+                    <include name="checkServiceLanguageChange"/>
+                    <include name="checkPortfolioLanguageChange"/>
+                    <include name="checkContactsLanguageChange"/>
+                    <include name="checkCareerLanguageChange"/>
+                    <include name="checkTestimonialsLanguageChange"/>
+                </methods>
+            </class>
+            <class name="tests.polandTests.GetInTouchTest">
+                <methods>
+                    <include name="openGetInTouchFormTest"/>
+                    <include name="closeGetInTouchFormByButtonTest"/>
+                    <include name="closeGetInTouchFormWithoutButtonTest"/>
+                    <include name="emptyFormTest"/>
+                    <include name="emptyMassageTest"/>
+                    <include name="emptyMailTest"/>
+                    <include name="addRightFile"/>
+                    <include name="addWrongFile"/>
+                </methods>
+            </class>
+            <class name="tests.polandTests.HomeTest">
+                <methods>
+                    <include name="checkReadMoreButton"/>
+                    <include name="openProjectByIcon"/>
+                    <include name="checkMoreProjectsButton"/>
+                </methods>
+            </class>
+            <class name="tests.polandTests.ServicesTest">
+                <methods>
+                    <include name="checkMobileApplicationButton"/>
+                    <include name="checkWebApplicationButton"/>
+                </methods>
+            </class>
+            <class name="tests.polandTests.PortfolioTest">
+                <methods>
+                    <include name="checkWebApplicationButton"/>
+                    <include name="checkMobileApplicationButton"/>
+                    <include name="checkUXApplicationButton"/>
+                    <include name="checkWebProjectsLinks"/>
+                    <include name="checkPopProjectsLinks"/>
+                    <include name="checkLifeTwigProjectsLinks"/>
+                    <include name="checkUXProjectsLinks"/>
+                </methods>
+            </class>
+            <class name="tests.polandTests.CareerTest">
+                <methods>
+                    <include name="checkOpenFullInformation"/>
+                    <include name="checkCloseFullInformation"/>
+                </methods>
+            </class>
+            <class name="tests.polandTests.FooterTest">
+                <methods>
+                    <include name="checkHomeFooterButtons"/>
+                    <include name="checkServiceFooterButtons"/>
+                    <include name="checkPortfolioFooterButtons"/>
+                    <include name="checkContactsFooterButtons"/>
+                    <include name="checkCareerFooterButtons"/>
+                    <include name="checkTestimonialsFooterButtons"/>
+                </methods>
+            </class>
+            <class name="tests.dutchTests.HeaderTest">
+                <methods>
+                    <include name="checkHomeHeaderLinks"/>
+                    <include name="checkServiceHeaderLinks"/>
+                    <include name="checkPortfolioHeaderLinks"/>
+                    <include name="checkContactsHeaderLinks"/>
+                    <include name="checkCareerHeaderLinks"/>
+                    <include name="checkTestimonialsHeaderLinks"/>
+                    <include name="checkHomeLanguageChange"/>
+                    <include name="checkServiceLanguageChange"/>
+                    <include name="checkPortfolioLanguageChange"/>
+                    <include name="checkContactsLanguageChange"/>
+                    <include name="checkCareerLanguageChange"/>
+                    <include name="checkTestimonialsLanguageChange"/>
+                </methods>
+            </class>
+            <class name="tests.dutchTests.GetInTouchTest">
+                <methods>
+                    <include name="openGetInTouchFormTest"/>
+                    <include name="closeGetInTouchFormByButtonTest"/>
+                    <include name="closeGetInTouchFormWithoutButtonTest"/>
+                    <include name="emptyFormTest"/>
+                    <include name="emptyMassageTest"/>
+                    <include name="emptyMailTest"/>
+                    <include name="addRightFile"/>
+                    <include name="addWrongFile"/>
+                </methods>
+            </class>
+            <class name="tests.dutchTests.HomeTest">
+                <methods>
+                    <include name="checkReadMoreButton"/>
+                    <include name="openProjectByIcon"/>
+                    <include name="checkMoreProjectsButton"/>
+                </methods>
+            </class>
+            <class name="tests.dutchTests.ServicesTest">
+                <methods>
+                    <include name="checkMobileApplicationButton"/>
+                    <include name="checkWebApplicationButton"/>
+                </methods>
+            </class>
+            <class name="tests.dutchTests.PortfolioTest">
+                <methods>
+                    <include name="checkWebApplicationButton"/>
+                    <include name="checkMobileApplicationButton"/>
+                    <include name="checkUXApplicationButton"/>
+                    <include name="checkWebProjectsLinks"/>
+                    <include name="checkPopProjectsLinks"/>
+                    <include name="checkLifeTwigProjectsLinks"/>
+                    <include name="checkUXProjectsLinks"/>
+                </methods>
+            </class>
+            <class name="tests.dutchTests.CareerTest">
+                <methods>
+                    <include name="checkOpenFullInformation"/>
+                    <include name="checkCloseFullInformation"/>
+                </methods>
+            </class>
+            <class name="tests.dutchTests.FooterTest">
                 <methods>
                     <include name="checkHomeFooterButtons"/>
                     <include name="checkServiceFooterButtons"/>

@@ -26,6 +26,7 @@ public class BaseTest {
     protected final String CONTACTS_LINK = bundle.getString("contacts_link");
     protected final String CAREER_LINK = bundle.getString("career_link");
     protected final String TESTIMONIALS_LINK = bundle.getString("testimonials_link");
+    protected final String LANGUAGE_EN = "en";
 
     @BeforeClass
     public static void startLocal() {

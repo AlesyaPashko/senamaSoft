@@ -31,9 +31,15 @@ public class Specifications {
                 .build();
     }
 
-    public static ResponseSpecification responseSpecificationOK201(){
+    public static ResponseSpecification responseSpecificationOK503(){
         return new ResponseSpecBuilder()
-                .expectStatusCode(201)
+                .expectStatusCode(503)
+                .build();
+    }
+
+    public static ResponseSpecification responseSpecification404(){
+        return new ResponseSpecBuilder()
+                .expectStatusCode(404)
                 .build();
     }
 

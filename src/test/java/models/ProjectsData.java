@@ -11,4 +11,8 @@ public class ProjectsData {
 
     String projectName;
     String projectDescription;
+    String projectDescriptionRu;
+    String projectDescriptionAr;
+    String projectDescriptionPl;
+    String projectDescriptionDe;
 }

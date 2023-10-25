@@ -8,8 +8,10 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class EnContentData {
+public class ContentData {
 
+        @JsonProperty("email-required")
+        public String emailRequired;
         @JsonProperty("Your message has been sent!")
         public String yourMessageHasBeenSent;
         @JsonProperty("Get in touch")
@@ -169,6 +171,8 @@ public class EnContentData {
         @JsonProperty("Send us your resume and we'll inform you about the best opportunities")
         public String sendUsYourResume;
         @JsonProperty("UYC.")
+        public String uYCС;
+        @JsonProperty("UYC")
         public String uYC;
         @JsonProperty("BAT-text")
         public String bATText;
@@ -202,6 +206,8 @@ public class EnContentData {
         public String message;
         @JsonProperty("File must be no more than 5mb")
         public String fileMustBeNoMoreThan;
+        @JsonProperty("File must be no more than 5MB")
+        public String fileMustBeNoMoreTha;
         @JsonProperty("Invalid data type")
         public String invalidDataType;
         @JsonProperty("Less")

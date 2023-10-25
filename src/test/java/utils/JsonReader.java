@@ -1,8 +1,7 @@
 package utils;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import io.qameta.allure.internal.shadowed.jackson.core.type.TypeReference;
-import io.qameta.allure.internal.shadowed.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import models.*;
 import org.testng.annotations.DataProvider;
 
@@ -177,26 +176,121 @@ public class JsonReader {
     @DataProvider(name = "enContentData")
     public Object[][] getEnContentData() throws IOException {
         String filePath = "src/test/java/testData/enContent.json";
-        List<EnContentData> enContentData = readEnContentDataFromJson(filePath);
+        List<ContentData> ContentData = readContentDataFromJson(filePath);
 
-        Object[][] data = new Object[enContentData.size()][1];
-        for (int i = 0; i < enContentData.size(); i++) {
-            data[i][0] = enContentData.get(i);
+        Object[][] data = new Object[ContentData.size()][1];
+        for (int i = 0; i < ContentData.size(); i++) {
+            data[i][0] = ContentData.get(i);
+        }
+
+        return data;
+    }
+
+    @DataProvider(name = "ruContentData")
+    public Object[][] getRuContentData() throws IOException {
+        String filePath = "src/test/java/testData/ruContent.json";
+        List<ContentData> ContentData = readContentDataFromJson(filePath);
+
+        Object[][] data = new Object[ContentData.size()][1];
+        for (int i = 0; i < ContentData.size(); i++) {
+            data[i][0] = ContentData.get(i);
+        }
+
+        return data;
+    }
+
+    @DataProvider(name = "arContentData")
+    public Object[][] getArContentData() throws IOException {
+        String filePath = "src/test/java/testData/arContent.json";
+        List<ContentData> ContentData = readContentDataFromJson(filePath);
+
+        Object[][] data = new Object[ContentData.size()][1];
+        for (int i = 0; i < ContentData.size(); i++) {
+            data[i][0] = ContentData.get(i);
+        }
+
+        return data;
+    }
+
+    @DataProvider(name = "plContentData")
+    public Object[][] getPlContentData() throws IOException {
+        String filePath = "src/test/java/testData/plContent.json";
+        List<ContentData> ContentData = readContentDataFromJson(filePath);
+
+        Object[][] data = new Object[ContentData.size()][1];
+        for (int i = 0; i < ContentData.size(); i++) {
+            data[i][0] = ContentData.get(i);
+        }
+
+        return data;
+    }
+
+    @DataProvider(name = "deContentData")
+    public Object[][] getDeContentData() throws IOException {
+        String filePath = "src/test/java/testData/deContent.json";
+        List<ContentData> ContentData = readContentDataFromJson(filePath);
+
+        Object[][] data = new Object[ContentData.size()][1];
+        for (int i = 0; i < ContentData.size(); i++) {
+            data[i][0] = ContentData.get(i);
         }
 
         return data;
     }
 
 
-    private List<EnContentData> readEnContentDataFromJson(String filePath) throws IOException {
+    private List<ContentData> readContentDataFromJson(String filePath) throws IOException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        List<ContentData> enContentDataList = objectMapper.readValue(new File(filePath), objectMapper.getTypeFactory().constructCollectionType(List.class, ContentData.class));
+        return enContentDataList;
+    }
+
+    @DataProvider(name = "geInTouchData")
+    public Object[][] getGetInTouchData() throws IOException {
+        String filePath = "src/test/java/testData/getInTouchData.json";
+        List<GetInTouchData> getInTouchData = readGetInTouchDataFromJson(filePath);
+
+        Object[][] data = new Object[getInTouchData.size()][1];
+        for (int i = 0; i < getInTouchData.size(); i++) {
+            data[i][0] = getInTouchData.get(i);
+        }
+
+        return data;
+    }
+
+    private List<GetInTouchData> readGetInTouchDataFromJson(String filePath) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
         File file = new File(filePath);
 
         try (FileInputStream fis = new FileInputStream(file)) {
-            return objectMapper.readValue(fis, new TypeReference<List<EnContentData>>() {
+            return objectMapper.readValue(fis, new TypeReference<List<GetInTouchData>>() {
             });
         }
     }
+
+    @DataProvider(name = "geInTouchErrorData")
+    public Object[][] getGetInTouchErrorData() throws IOException {
+        String filePath = "src/test/java/testData/getInTouchErrorData.json";
+        List<GetInTouchErrorData> getInTouchErrorData = readGetInTouchErrorDataFromJson(filePath);
+
+        Object[][] data = new Object[getInTouchErrorData.size()][1];
+        for (int i = 0; i < getInTouchErrorData.size(); i++) {
+            data[i][0] = getInTouchErrorData.get(i);
+        }
+
+        return data;
+    }
+
+    private List<GetInTouchErrorData> readGetInTouchErrorDataFromJson(String filePath) throws IOException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        File file = new File(filePath);
+
+        try (FileInputStream fis = new FileInputStream(file)) {
+            return objectMapper.readValue(fis, new TypeReference<List<GetInTouchErrorData>>() {
+            });
+        }
+    }
+
 
 
 }

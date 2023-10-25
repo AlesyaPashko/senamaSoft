@@ -13,7 +13,6 @@ public class HeaderLanguageData {
     String welcomeContent;
     String servicesContent;
     String portfolioContent;
-    String activeClassName;
     String contactsContent;
     String careerContent;
     String testimonialsContent;

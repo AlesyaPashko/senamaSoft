@@ -5,20 +5,16 @@ import org.testng.annotations.Test;
 import steps.HeaderSteps;
 import steps.ServicesSteps;
 
-import static com.codeborne.selenide.Selenide.webdriver;
-import static com.codeborne.selenide.WebDriverConditions.url;
+import static com.codeborne.selenide.Selenide.open;
 
 public class ServicesTest extends BaseTest {
 
-    private HeaderSteps headerSteps = new HeaderSteps();
     private ServicesSteps servicesSteps = new ServicesSteps();
 
     @BeforeMethod
     @Override
     public void goToUrl() {
-        super.goToUrl();
-        headerSteps.clickServicesButton();
-        webdriver().shouldHave(url(SERVICES_LINK));
+        open(SERVICES_LINK);
     }
 
     @Test

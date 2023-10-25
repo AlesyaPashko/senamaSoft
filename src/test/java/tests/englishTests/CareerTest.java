@@ -3,21 +3,16 @@ package tests.englishTests;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import steps.CareerSteps;
-import steps.HeaderSteps;
 
-import static com.codeborne.selenide.Selenide.webdriver;
-import static com.codeborne.selenide.WebDriverConditions.url;
+import static com.codeborne.selenide.Selenide.open;
 
 public class CareerTest extends BaseTest {
     private CareerSteps careerSteps = new CareerSteps();
-    private HeaderSteps headerSteps = new HeaderSteps();
 
     @BeforeMethod
     @Override
     public void goToUrl() {
-        super.goToUrl();
-        headerSteps.clickCareerButton();
-        webdriver().shouldHave(url(CAREER_LINK));
+        open(CAREER_LINK);
     }
 
     @Test

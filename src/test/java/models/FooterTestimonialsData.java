@@ -9,6 +9,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class FooterTestimonialsData {
 
-    String buttonName;
-    String link;
+    private String buttonName;
+    private String link;
 }

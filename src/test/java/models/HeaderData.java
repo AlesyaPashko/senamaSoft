@@ -11,4 +11,8 @@ public class HeaderData {
 
     String tabName;
     String link;
+    String linkRu;
+    String linkAr;
+    String linkPl;
+    String linkDe;
 }

@@ -8,21 +8,16 @@ import steps.HeaderSteps;
 import steps.PortfolioSteps;
 import utils.JsonReader;
 
-import static com.codeborne.selenide.Selenide.webdriver;
-import static com.codeborne.selenide.WebDriverConditions.url;
+import static com.codeborne.selenide.Selenide.open;
 
 
 public class PortfolioTest extends BaseTest {
     private PortfolioSteps portfolioSteps = new PortfolioSteps();
 
-    private HeaderSteps headerSteps = new HeaderSteps();
-
     @BeforeMethod
     @Override
     public void goToUrl() {
-        super.goToUrl();
-        headerSteps.clickPortfolioButton();
-        webdriver().shouldHave(url(PORTFOLIO_LINK));
+        open(PORTFOLIO_LINK);
     }
 
     @Test

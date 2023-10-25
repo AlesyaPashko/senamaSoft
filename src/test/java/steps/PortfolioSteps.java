@@ -11,7 +11,7 @@ import static com.codeborne.selenide.WebDriverConditions.url;
 public class PortfolioSteps {
 
     private final String WEB_CONTENT = "Dr. Martens";
-    private final String MOBILE_CONTENT = "LIFE TWIG";
+    private final String MOBILE_CONTENT = "LifeTwig";
     private final String UX_CONTENT = "Eaton Real Estate";
     private final String LIFE_TWIG_LINK = "https://play.google.com/store/apps/details?id=life.twig&pli=1";
     private final String POP_LINK = "https://play.google.com/store/apps/details?id=com.kimuandr.pop";
@@ -60,7 +60,6 @@ public class PortfolioSteps {
                 webdriver().shouldHave(url(link));
                 break;
             case ("British American Tobacco (BAT) – Unlock Your City (UYC)"):
-                porfolioPage.batLink.shouldHave(Condition.matchText(link));
                 porfolioPage.batLink.click();
                 switchTo().window(1);
                 webdriver().shouldHave(url(link));

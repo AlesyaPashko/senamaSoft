@@ -1,30 +1,58 @@
 [
   {
     "tabName": "logo",
-    "link": "https://www.senamasoft.com/"
+    "link": "https://www.senamasoft.com/",
+    "linkRu": "https://www.senamasoft.com/ru",
+    "linkAr": "https://www.senamasoft.com/ar",
+    "linkPl": "https://www.senamasoft.com/pl",
+    "linkDe": "https://www.senamasoft.com/de"
   },
   {
     "tabName": "home",
-    "link": "https://www.senamasoft.com/"
+    "link": "https://www.senamasoft.com/",
+    "linkRu": "https://www.senamasoft.com/ru",
+    "linkAr": "https://www.senamasoft.com/ar",
+    "linkPl": "https://www.senamasoft.com/pl",
+    "linkDe": "https://www.senamasoft.com/de"
   },
   {
     "tabName": "services",
-    "link": "https://www.senamasoft.com/services"
+    "link": "https://www.senamasoft.com/services",
+    "linkRu": "https://www.senamasoft.com/ru/services",
+    "linkAr": "https://www.senamasoft.com/ar/services",
+    "linkPl": "https://www.senamasoft.com/pl/services",
+    "linkDe": "https://www.senamasoft.com/de/services"
   },
   {
     "tabName": "portfolio",
-    "link": "https://www.senamasoft.com/portfolio"
+    "link": "https://www.senamasoft.com/portfolio",
+    "linkRu": "https://www.senamasoft.com/ru/portfolio",
+    "linkAr": "https://www.senamasoft.com/ar/portfolio",
+    "linkPl": "https://www.senamasoft.com/pl/portfolio",
+    "linkDe": "https://www.senamasoft.com/de/portfolio"
   },
   {
     "tabName": "contacts",
-    "link": "https://www.senamasoft.com/contacts"
+    "link": "https://www.senamasoft.com/contacts",
+    "linkRu": "https://www.senamasoft.com/ru/contacts",
+    "linkAr": "https://www.senamasoft.com/ar/contacts",
+    "linkPl": "https://www.senamasoft.com/pl/contacts",
+    "linkDe": "https://www.senamasoft.com/de/contacts"
   },
   {
     "tabName": "career",
-    "link": "https://www.senamasoft.com/offers"
+    "link": "https://www.senamasoft.com/offers",
+    "linkRu": "https://www.senamasoft.com/ru/offers",
+    "linkAr": "https://www.senamasoft.com/ar/offers",
+    "linkPl": "https://www.senamasoft.com/pl/offers",
+    "linkDe": "https://www.senamasoft.com/de/offers"
   },
   {
     "tabName": "testimonials",
-    "link": "https://www.senamasoft.com/testimonials"
+    "link": "https://www.senamasoft.com/testimonials",
+    "linkRu": "https://www.senamasoft.com/ru/testimonials",
+    "linkAr": "https://www.senamasoft.com/ar/testimonials",
+    "linkPl": "https://www.senamasoft.com/pl/testimonials",
+    "linkDe": "https://www.senamasoft.com/de/testimonials"
   }
 ]

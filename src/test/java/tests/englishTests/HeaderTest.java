@@ -47,42 +47,42 @@ public class HeaderTest extends BaseTest {
 
     @Test(dataProvider = "headerLanguageData", dataProviderClass = JsonReader.class)
     public void checkHomeLanguageChange(HeaderLanguageData headerLanguageData) {
-        headerSteps.changeLanguage(headerLanguageData.getLanguage(), headerLanguageData.getActiveClassName());
+        headerSteps.changeLanguage(headerLanguageData.getLanguage());
         headerSteps.checkWelcomeContent(headerLanguageData.getWelcomeContent());
     }
 
     @Test(dataProvider = "headerLanguageData", dataProviderClass = JsonReader.class)
     public void checkServiceLanguageChange(HeaderLanguageData headerLanguageData) {
         headerSteps.clickTabName("services", SERVICES_LINK);
-        headerSteps.changeLanguage(headerLanguageData.getLanguage(), headerLanguageData.getActiveClassName());
+        headerSteps.changeLanguage(headerLanguageData.getLanguage());
         headerSteps.checkServicesContent(headerLanguageData.getServicesContent());
     }
 
     @Test(dataProvider = "headerLanguageData", dataProviderClass = JsonReader.class)
     public void checkPortfolioLanguageChange(HeaderLanguageData headerLanguageData) {
         headerSteps.clickTabName("portfolio", PORTFOLIO_LINK);
-        headerSteps.changeLanguage(headerLanguageData.getLanguage(), headerLanguageData.getActiveClassName());
+        headerSteps.changeLanguage(headerLanguageData.getLanguage());
         headerSteps.checkPortfolioContent(headerLanguageData.getPortfolioContent());
     }
 
     @Test(dataProvider = "headerLanguageData", dataProviderClass = JsonReader.class)
     public void checkContactsLanguageChange(HeaderLanguageData headerLanguageData) {
         headerSteps.clickTabName("contacts", CONTACTS_LINK);
-        headerSteps.changeLanguage(headerLanguageData.getLanguage(), headerLanguageData.getActiveClassName());
+        headerSteps.changeLanguage(headerLanguageData.getLanguage());
         headerSteps.checkContactContent(headerLanguageData.getContactsContent());
     }
 
     @Test(dataProvider = "headerLanguageData", dataProviderClass = JsonReader.class)
     public void checkCareerLanguageChange(HeaderLanguageData headerLanguageData) {
         headerSteps.clickTabName("career", CAREER_LINK);
-        headerSteps.changeLanguage(headerLanguageData.getLanguage(), headerLanguageData.getActiveClassName());
+        headerSteps.changeLanguage(headerLanguageData.getLanguage());
         headerSteps.checkCareerContent(headerLanguageData.getCareerContent());
     }
 
     @Test(dataProvider = "headerLanguageData", dataProviderClass = JsonReader.class)
     public void checkTestimonialsLanguageChange(HeaderLanguageData headerLanguageData) {
         headerSteps.clickTabName("testimonials", TESTIMONIALS_LINK);
-        headerSteps.changeLanguage(headerLanguageData.getLanguage(), headerLanguageData.getActiveClassName());
+        headerSteps.changeLanguage(headerLanguageData.getLanguage());
         headerSteps.checkTestimonialsContent(headerLanguageData.getTestimonialsContent());
     }
 }

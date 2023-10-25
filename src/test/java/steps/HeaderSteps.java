@@ -12,6 +12,7 @@ import static com.codeborne.selenide.WebDriverConditions.url;
 public class HeaderSteps {
 
     public final String ACTIVE_CLASS_NAME = "styles_active_link__2_2NK";
+    public final String ACTIVE_LANGUAGE_CLASS_NAME = "styles_lang_btn___4ThX styles_active_lang__wjmeN";
 
     private HeaderPage headerPage = new HeaderPage();
 
@@ -59,27 +60,27 @@ public class HeaderSteps {
     }
 
     @Step
-    public void changeLanguage(String language, String activeClassName){
+    public void changeLanguage(String language){
         switch (language) {
             case ("english"):
                 headerPage.enButton.click();
-                headerPage.enButton.shouldHave(attribute("class", activeClassName));
+                headerPage.enButton.shouldHave(attribute("class", ACTIVE_LANGUAGE_CLASS_NAME));
                 break;
             case ("russian"):
                 headerPage.ruButton.click();
-                headerPage.ruButton.shouldHave(attribute("class", activeClassName));
+                headerPage.ruButton.shouldHave(attribute("class", ACTIVE_LANGUAGE_CLASS_NAME));
                 break;
             case ("arab"):
                 headerPage.arButton.click();
-                headerPage.arButton.shouldHave(attribute("class", activeClassName));
+                headerPage.arButton.shouldHave(attribute("class", ACTIVE_LANGUAGE_CLASS_NAME));
                 break;
             case ("poland"):
                 headerPage.plButton.click();
-                headerPage.plButton.shouldHave(attribute("class", activeClassName));
+                headerPage.plButton.shouldHave(attribute("class", ACTIVE_LANGUAGE_CLASS_NAME));
                 break;
             case ("dutch"):
                 headerPage.deButton.click();
-                headerPage.deButton.shouldHave(attribute("class", activeClassName));
+                headerPage.deButton.shouldHave(attribute("class", ACTIVE_LANGUAGE_CLASS_NAME));
                 break;
             default:
                 break;
