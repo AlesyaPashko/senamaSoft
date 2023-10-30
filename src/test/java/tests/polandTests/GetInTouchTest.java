@@ -57,9 +57,23 @@ public class GetInTouchTest extends BaseTest {
         getInTouchSteps.addFile(getInTouchData.getFile(), getInTouchData.getText(), "right");
     }
 
+    @Test(dataProvider = "geInTouchData", dataProviderClass = JsonReader.class)
+    public void deleteRightFile(GetInTouchData getInTouchData){
+        getInTouchSteps.clickGetInTouchButton();
+        getInTouchSteps.addFile(getInTouchData.getFile(), getInTouchData.getText(), "right");
+        getInTouchSteps.deleteFile(LANGUAGE_PL);
+    }
+
     @Test(dataProvider = "geInTouchErrorData", dataProviderClass = JsonReader.class)
     public void addWrongFile(GetInTouchErrorData getInTouchErrorData){
         getInTouchSteps.clickGetInTouchButton();
         getInTouchSteps.addFile(getInTouchErrorData.getFile(), getInTouchErrorData.getTextPl(), "error");
+    }
+
+    @Test(dataProvider = "geInTouchErrorData", dataProviderClass = JsonReader.class)
+    public void deleteErrorFile(GetInTouchErrorData getInTouchErrorData){
+        getInTouchSteps.clickGetInTouchButton();
+        getInTouchSteps.addFile(getInTouchErrorData.getFile(), getInTouchErrorData.getTextPl(), "error");
+        getInTouchSteps.deleteFile(LANGUAGE_PL);
     }
 }

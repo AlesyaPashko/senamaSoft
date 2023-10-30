@@ -15,7 +15,8 @@ public class GetInTouchPage {
     public SelenideElement mailInput = $x("//div[@class='styles_wrapperModal__DMwV_']//input[@name='email']");
     public SelenideElement massageInput = $x("//div[@class='styles_wrapperModal__DMwV_']//textarea[@class='styles_form_textarea__3cyt2  ']");
     public SelenideElement fileInput = $x("//input[@name='file']");
-    public SelenideElement fileText = $x("//p[@class='styles_emty_text__eELEI']");
+    public SelenideElement deleteFileButton = $x("//label");
+    public ElementsCollection fileText = $$x("//p[@class='styles_emty_text__eELEI']");
     public SelenideElement fileErrorText = $x("//p[@class='styles_err_text__y9dSA']");
     public SelenideElement headerZone = $x("//header");
 }

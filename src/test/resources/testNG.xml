@@ -47,7 +47,9 @@
                     <include name="emptyMassageTest"/>
                     <include name="emptyMailTest"/>
                     <include name="addRightFile"/>
+                    <include name="deleteRightFile"/>
                     <include name="addWrongFile"/>
+                    <include name="deleteErrorFile"/>
                 </methods>
             </class>
             <class name="tests.englishTests.HomeTest">
@@ -115,7 +117,9 @@
                     <include name="emptyMassageTest"/>
                     <include name="emptyMailTest"/>
                     <include name="addRightFile"/>
+                    <include name="deleteRightFile"/>
                     <include name="addWrongFile"/>
+                    <include name="deleteErrorFile"/>
                 </methods>
             </class>
             <class name="tests.russianTests.HomeTest">
@@ -183,7 +187,9 @@
                     <include name="emptyMassageTest"/>
                     <include name="emptyMailTest"/>
                     <include name="addRightFile"/>
+                    <include name="deleteRightFile"/>
                     <include name="addWrongFile"/>
+                    <include name="deleteErrorFile"/>
                 </methods>
             </class>
             <class name="tests.arabTests.HomeTest">
@@ -251,7 +257,9 @@
                     <include name="emptyMassageTest"/>
                     <include name="emptyMailTest"/>
                     <include name="addRightFile"/>
+                    <include name="deleteRightFile"/>
                     <include name="addWrongFile"/>
+                    <include name="deleteErrorFile"/>
                 </methods>
             </class>
             <class name="tests.polandTests.HomeTest">
@@ -319,7 +327,9 @@
                     <include name="emptyMassageTest"/>
                     <include name="emptyMailTest"/>
                     <include name="addRightFile"/>
+                    <include name="deleteRightFile"/>
                     <include name="addWrongFile"/>
+                    <include name="deleteErrorFile"/>
                 </methods>
             </class>
             <class name="tests.dutchTests.HomeTest">

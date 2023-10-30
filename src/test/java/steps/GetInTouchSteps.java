@@ -21,6 +21,11 @@ public class GetInTouchSteps {
     private final String EMPTY_MASSAGE_TEXT_AR = "من فضلك أدخل رسالة";
     private final String EMPTY_MASSAGE_TEXT_PL = "Wprowadź wiadomość, proszę.";
     private final String EMPTY_MASSAGE_TEXT_DE = "Bitte geben Sie Ihre Nachricht ein.";
+    private final String DELETE_FILE_TEXT_DE = "Datei löschen";
+    private final String DELETE_FILE_TEXT_PL = "Pusty";
+    private final String DELETE_FILE_TEXT_AR = "فارغ";
+    private final String DELETE_FILE_TEXT_RU = "Пусто";
+    private final String DELETE_FILE_TEXT_EN = "No file";
 
     private GetInTouchPage getInTouchPage = new GetInTouchPage();
     private HeaderPage headerPage = new HeaderPage();
@@ -69,9 +74,32 @@ public class GetInTouchSteps {
         if(fileType.equals("error")){
             getInTouchPage.fileErrorText.shouldHave(Condition.text(text));
         } else {
-            getInTouchPage.fileText.shouldHave(Condition.text(text));
+            getInTouchPage.fileText.get(0).shouldHave(Condition.text(text));
         }
+    }
 
+    @Step
+    public void deleteFile(String language){
+        getInTouchPage.deleteFileButton.click();
+        switch (language){
+            case "en":
+                getInTouchPage.fileText.get(0).shouldHave(Condition.text(DELETE_FILE_TEXT_EN));
+                break;
+            case "ru":
+                getInTouchPage.fileText.get(0).shouldHave(Condition.text(DELETE_FILE_TEXT_RU));
+                break;
+            case "ar":
+                getInTouchPage.fileText.get(0).shouldHave(Condition.text(DELETE_FILE_TEXT_AR));
+                break;
+            case "pl":
+                getInTouchPage.fileText.get(0).shouldHave(Condition.text(DELETE_FILE_TEXT_PL));
+                break;
+            case "de":
+                getInTouchPage.fileText.get(0).shouldHave(Condition.text(DELETE_FILE_TEXT_DE));
+                break;
+            default:
+                break;
+        }
     }
 
     @Step
